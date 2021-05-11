@@ -8,12 +8,15 @@
     <title>{% block title %}Mars Odyssey{% endblock %}</title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header-footer.css">
     {% block stylesheet %}{% endblock %}
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
 
 <body>
+    {% include 'header.html.twig' %}
     {% block content %}{% endblock %}
+    {% include 'footer.html.twig' %}
     {% block javascript %}{% endblock %}
 </body>
 </html>
