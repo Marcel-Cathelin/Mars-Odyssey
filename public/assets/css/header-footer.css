@@ -1,3 +1,10 @@
+:root {
+    --bleu : #26495c;
+    --ocre: #c4a35a;
+    --terre: #c66b3d;
+    --gris: #e5e5dc;
+  }
+
 .nav-header{
     width: auto;
     display: flex;
@@ -6,7 +13,7 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: #DDD;
+    background-color: #e5e5dc;
     z-index:10;
     box-shadow: 0 4px 2px -2px #DDD;
 }
@@ -59,11 +66,9 @@
     display: none;
 }
 
-.footer {
-    margin: auto;
+.footer h2{
+    margin: 0 auto;
     background-color: burlywood;
     text-align: center;
     height: 90px;
-    display: flex;
-    justify-content: center;
 }

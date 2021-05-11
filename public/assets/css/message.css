@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    border: 5px solid black;
+    background-color: bisque;
+}
+
+form {
+    width: 1000px;
+    border: 1px solid black;
+    background-color: bisque;
+    margin: 200px auto;
+    padding: 50px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+.message {
+    height: 750px;
+}

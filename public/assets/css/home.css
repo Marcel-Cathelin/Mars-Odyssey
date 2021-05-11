@@ -9,10 +9,20 @@
     height: 900px;
   }
 
-.robots {
-  background-color: bisque;
+
+#boot .flex-container {
+   flex: 1 1 0;
+}
+.flex-container {
   display: flex;
   justify-content: space-around;
-  height: 400px;
+}
+
+.robots {
+  height: 380px;
   margin: 530px auto;
+  padding: 10px;
+  text-align: center;
+  width: 65%;
+  float: right;
 }
