@@ -1,0 +1,30 @@
+ 
+ {% extends 'layout.html.twig' %}
+ 
+ 
+ {% block content %}
+ <div class ="birthday">
+ 
+ <form method="POST" action = "/PicsDay/picsDay">
+  <p>
+    <label for="mois">mois</label>
+    <input type="number" id="mois" name="mois" placeholder="mois" min="1" max="12">
+  </p>
+  
+   <p>
+    <label for="jour">jour</label>
+    <input type="number" id="jour" name="jour" placeholder="jour" min="1" max="31">
+  </p>
+
+  <p>
+    <input type="submit" value="valider">
+    </p>
+  </form>
+ <ul>
+  {% for picture in pictures %}
+  
+  <li><img src= "{{ picture.img_src }}" width= "500px" display block  justify-content= 'center'> </img></li>
+  {% endfor %}
+    </ul>
+</div>
+  {% endblock %}
