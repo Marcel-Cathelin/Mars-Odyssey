@@ -1,5 +1,17 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}
+	{{ parent() }}
+	Accueil
+{% endblock %}
+
 {% block content %}
+<div class="page_index">
+
     <h1>Hello les Vieux Fourneaux !</h1>
+</div>
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/home.css">
 {% endblock %}
