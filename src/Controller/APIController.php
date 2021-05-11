@@ -15,14 +15,12 @@ class APIController extends AbstractController
 
 
 
-        $birthday = rand(1, 30);
-        $birthmonth = rand(1, 12);
+        $day = rand(1, 1000);
 
         $client = HttpClient::create(); //requête API
 
-        $response = $client->request('GET', 'https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/
-        photos?earth_date=2020-' . $birthmonth . '-' . $birthday .
-        '&api_key=aQmwVh6jmW441qXrteA6TwCL2foMZTaMsdeDadnb');
+        $response = $client->request('GET', 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol='
+        . $day . '&api_key=aQmwVh6jmW441qXrteA6TwCL2foMZTaMsdeDadnb');
 
         $statusCode = $response->getStatusCode();
 

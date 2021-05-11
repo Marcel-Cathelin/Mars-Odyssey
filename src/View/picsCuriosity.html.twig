@@ -1,6 +1,8 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+    
+    <div class="pics">
     <h1>Send pics !</h1>
 
   
@@ -10,6 +12,6 @@
   <li><img src= "{{ picture.img_src }}" width= "500px" display flex  justify-content= 'center'> </img></li>
   {% endfor %}
     </ul>
- 
+  </div>
 
 {% endblock %}

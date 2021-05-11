@@ -10,15 +10,22 @@ use function Amp\Iterator\toArray;
 class PicsDayController extends AbstractController
 {
 
+    public function form()
+    {
+        return $this->twig->render('form.html.twig');
+    }
+
+
     public function picsDay()
     {
 
 
 
-        $birthday = rand(1, 30);
-        $birthmonth = rand(1, 12);
+        $birthday = $_POST['jour'];
+        $birthmonth = $_POST['mois'];
 
-        $client = HttpClient::create(); //requête API
+
+         $client = HttpClient::create(); //requête API
 
         $response = $client->request('GET', 'https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/
         photos?earth_date=2020-'
