@@ -7,10 +7,10 @@ use Symfony\Component\HttpClient\HttpClient;
 
 use function Amp\Iterator\toArray;
 
-class APIController extends AbstractController
+class PicsDayController extends AbstractController
 {
 
-    public function pics()
+    public function picsDay()
     {
 
 
@@ -21,8 +21,8 @@ class APIController extends AbstractController
         $client = HttpClient::create(); //requête API
 
         $response = $client->request('GET', 'https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/
-        photos?earth_date=2020-' . $birthmonth . '-' . $birthday .
-        '&api_key=aQmwVh6jmW441qXrteA6TwCL2foMZTaMsdeDadnb');
+        photos?earth_date=2020-'
+        . $birthmonth . '-' . $birthday . '&api_key=aQmwVh6jmW441qXrteA6TwCL2foMZTaMsdeDadnb');
 
         $statusCode = $response->getStatusCode();
 
@@ -33,6 +33,6 @@ class APIController extends AbstractController
 
             $pictures = $album["photos"];
         }
-        return $this->twig->render('pics.html.twig', [ 'pictures' => $pictures]);
+        return $this->twig->render('picsDay.html.twig', [ 'pictures' => $pictures]);
     }
 }

@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Send pics !</h1>
+
+  
+   <ul>
+  {% for picture in pictures %}
+  
+  <li><img src= "{{ picture.img_src }}" width= "500px" display flex  justify-content= 'center'> </img></li>
+  {% endfor %}
+    </ul>
+ 
+
+{% endblock %}
