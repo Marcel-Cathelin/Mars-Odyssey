@@ -1,0 +1,28 @@
+.page_index {
+    margin: 0;
+    padding: 6rem 0 10rem 0;
+    background-image: url(/assets/images/accueil.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+  }
+
+
+#boot .flex-container {
+   flex: 1 1 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.robots {
+  height: 380px;
+  margin: 530px auto;
+  padding: 10px;
+  text-align: center;
+  width: 65%;
+  float: right;
+}

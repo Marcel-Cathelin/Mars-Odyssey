@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	Message
+{% endblock %}
+
+{% block content %}
+
+<div class="message">
+
+
+    <form method="POST">
+        <p>
+            <label>Prénom</label>
+            <input type="text" name="firstname"/>
+        </p>
+
+        <p>
+            <label>Message</label>
+            <textarea name="message" cols='100' rows='5' placeholder="Ecris ton message"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Envoyer au robot"/>
+        </p>
+    </form>
+</div>
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/message.css">
+{% endblock %}

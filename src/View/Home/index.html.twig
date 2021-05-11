@@ -1,5 +1,38 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}
+	{{ parent() }}
+	Accueil
+{% endblock %}
+
 {% block content %}
-    <h1>Hello les Vieux Fourneaux !</h1>
+<div class="page_index">
+
+
+
+      <div class="robots">
+
+      <section id="boot">
+
+        <div class="flex-container">
+          <div>
+            <img src="/assets/images/Perseverance02.png" alt="" width="400" />
+            <p>Spirit</p>
+          </div>
+          <div>
+            <img src="/assets/images/spirit.jpg" alt="" width="280" />
+            <p>Spirit</p>
+          </div>
+          <div>
+            <img src="/assets/images/spirit.jpg" alt="" width="280" />
+            <p>Spirit</p>
+          </div>
+
+      </section>
+      </div>
+</div>
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/home.css">
 {% endblock %}
