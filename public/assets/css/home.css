@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 900px;
+    height: 980px;
   }
 
 
@@ -20,9 +20,9 @@
 
 .robots {
   height: 380px;
-  margin: 530px auto;
+  margin: 830px auto;
   padding: 10px;
   text-align: center;
-  width: 65%;
+  width: 60%;
   float: right;
 }
