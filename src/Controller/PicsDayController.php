@@ -26,10 +26,11 @@ class PicsDayController extends AbstractController
 
 
          $client = HttpClient::create(); //requête API
+            $url = 'https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/'
+            . 'photos?earth_date=2020-'
+            . $birthmonth . '-' . $birthday . '&api_key=aQmwVh6jmW441qXrteA6TwCL2foMZTaMsdeDadnb';
 
-        $response = $client->request('GET', 'https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/
-        photos?earth_date=2020-'
-        . $birthmonth . '-' . $birthday . '&api_key=aQmwVh6jmW441qXrteA6TwCL2foMZTaMsdeDadnb');
+            $response = $client->request('GET', $url);
 
         $statusCode = $response->getStatusCode();
 
