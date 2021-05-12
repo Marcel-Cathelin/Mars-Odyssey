@@ -11,17 +11,17 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- Schema mydb
 -- -----------------------------------------------------
 -- -----------------------------------------------------
--- Schema mars-odyssey
+-- Schema mars_odyssey
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mars-odyssey
+-- Schema mars_odyssey
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS mars_odyssey DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
 USE mars_odyssey ;
 
 -- -----------------------------------------------------
--- Table mars-odyssey.message
+-- Table mars_odyssey.message
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS mars_odyssey.message (
   id INT NOT NULL AUTO_INCREMENT,
