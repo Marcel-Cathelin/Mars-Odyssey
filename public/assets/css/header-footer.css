@@ -82,14 +82,14 @@ form {
 }
 
 input {
-    width: 100px;
+    
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
   
 }
 
-label {
+.label {
     font-size: 30px;
     font-style: italic ;
 
@@ -98,6 +98,7 @@ label {
 .birthday {
 
     background-image: url(/assets/images/accueil.jpg);
+    height: 630px;
 }
 
 li {
