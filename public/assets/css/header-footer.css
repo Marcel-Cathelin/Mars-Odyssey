@@ -66,11 +66,15 @@
     display: none;
 }
 
-.footer h2{
+
+footer h2{
     margin: 0 auto;
     background-color: burlywood;
     text-align: center;
     height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 form {
