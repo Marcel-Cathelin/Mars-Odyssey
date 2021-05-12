@@ -5,8 +5,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 980px;
+    /*background-attachment: fixed;*/
+    height: 590px;
   }
 
 
@@ -20,9 +20,9 @@
 
 .robots {
   height: 380px;
-  margin: 830px auto;
-  padding: 10px;
+  margin: 470px 0 0 780px;
+  /*padding: 10px;*/
   text-align: center;
-  width: 60%;
-  float: right;
+  width: 55%;
+  /*float: right;*/
 }
