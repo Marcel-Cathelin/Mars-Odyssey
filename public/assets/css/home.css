@@ -1,28 +1,39 @@
 .page_index {
     margin: 0;
-    padding: 6rem 0 10rem 0;
+    padding: 6rem 0 0 0;
     background-image: url(/assets/images/accueil.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
-    height: 590px;
+    height: 800px;
   }
 
 
-#boot .flex-container {
-   flex: 1 1 0;
+#boot {
+
+   display: flex;
+   align-items: flex-end;
+   height: 100%;
+   width: 100%;
+   justify-content: flex-end;
+
 }
+
 .flex-container {
   display: flex;
   justify-content: space-around;
 }
 
 .robots {
-  height: 380px;
-  margin: 470px 0 0 780px;
+  height: 200px;
   /*padding: 10px;*/
-  text-align: center;
-  width: 55%;
-  /*float: right;*/
+
+  /*width: 55%;*/
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 80px;
 }
+
+
+
